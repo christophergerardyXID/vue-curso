@@ -38,22 +38,11 @@ const shoppingCartStore = defineStore("shoppingCart", () => {
         })
     });
 
-    const totalToPay = computed(() => {
-        let total = 0;
-
-        for (const product of productsInShoppingCart) {
-            total += product.price;
-        }
-
-        return total;
-    });
-
     const addNewProduct = (product) => {
         productsInShoppingCart.push(product);
     }
 
     return {
-        totalToPay,
         searchCriteria,
         productsFilter,
         productsInShoppingCart,

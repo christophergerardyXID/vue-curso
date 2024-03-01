@@ -18,6 +18,14 @@ const links = reactive([
   {
     text: 'Carrito',
     path: '/shop',
+  },
+  {
+    text: 'Categorias de coins',
+    path: '/coins',
+  },
+  {
+    text: 'Animaciones y transiciones',
+    path: '/animations'
   }
 ])
 </script>
